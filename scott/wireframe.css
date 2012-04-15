@@ -1,0 +1,336 @@
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#tpl-header, 
+#tpl-footer {
+	h2, h3 {
+		position: absolute;
+		left: -1000px;
+	}
+	
+	h4 {
+		padding: 0;
+		margin: 0;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	
+	hr {
+		display: none;
+	}
+	
+}
+
+#tpl-header, 
+#tpl-content-navigation, 
+#tpl-footer {
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	a:focus {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	
+}
+
+/**
+ * The skip ahead section should not be seen by browsers, only when it
+ * is activated by the keyboard should it be shown.
+ */
+#tpl-skip-ahead {
+	div {
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+}
+
+#tpl-skip-ahead-links {
+	
+	a {
+		position: absolute;
+		left: -1000px;
+		background-color: white;
+		text-align: center;
+		width: 200px;
+		z-index: 1;
+		padding: 10px;
+	}
+	
+	a:focus {
+		left: 400px;
+	}
+	
+	a:active {
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+}
+
+/**
+ * Header
+ */
+#tpl-header {
+	
+	#tpl-canada-identity {
+		h3 {
+			position: absolute;
+			display: block;
+			top: 50px;
+			left: 20px;
+			z-index: 1;
+		}
+		
+		ul {
+			height: 30px;
+			background-color: white;
+		}
+		
+		#tpl-canada-signature {
+			float: left;
+			margin: 10px;
+		}
+
+		#tpl-canada-wmms {
+			float: right;
+			margin: 5px;
+		}
+	
+	}
+
+	#tpl-canada-header-links a {
+		display: none;
+	}
+	
+	#tpl-header-language-switch {
+		
+		a {
+			position: absolute;
+			display: block;
+			right: 10px;
+			top: 70px;
+			z-index: 2;
+			padding: 3px 10px;
+			border: 1px solid blue;
+			background-color: #ccf;
+		}
+		
+		a:hover {
+			background-color: #eef;
+		}
+		
+	}
+
+	#tpl-search {
+		display: none;
+	}
+
+	#tpl-main-navigation {
+		float: left;
+		width: 100%;
+		background-color: #ccc;
+		
+		#tpl-main-navigation-inner {
+			position: relative;
+			padding-top: 60px;
+			padding-left: 5px;
+			background-color: #eee;
+			
+			a {
+				float: left;
+				border: 1px solid blue;
+				background-color: #ccf;
+				padding: 1px 5px;
+				margin: 5px;
+				background-color: #ccf;
+				font-weight: normal;
+				font-size: 0.8em;
+			}
+			
+			a:hover {
+				background-color: #eef;
+			}
+			
+			ul {
+				display: none;
+			}
+			
+		}
+
+	}
+
+	#tpl-breadcrumb {
+		clear: both;
+		height: 24px;
+		top: 30px;
+		left: 0px;
+		right: 100px;
+		background-color: #bbb;
+		
+		ol {
+			list-style: none;
+			margin: 0;
+			margin-left: 5px;
+			padding: 0;
+			padding-top: 3px;
+			
+			li {
+				float: left;
+				background-position: 0 center ;
+				background-repeat: no-repeat;
+				padding: 0 0 0 5px;
+				
+				a {
+					color: #295376;
+					
+					span {
+						text-decoration: none;
+						font-size: 85%;
+						text-decoration: none;
+					}
+					
+				}
+				
+				a span:after {
+					content: ' > ';
+				}
+				
+			}
+			
+			li:first-child {
+				background-image: none;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+#tpl-content-navigation {
+	
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/background-withglow-andleaf.jpg);
+	background-repeat: repeat-x;
+	background-position: center -180px;
+
+	h2 {
+		display: none;
+	}
+
+	h3 {
+		margin: 0;
+		padding: 0;
+		font-size: 1.0em;
+		padding: 2px 8px;
+		background-color: #ccc;
+	}
+
+	ul {
+		list-style: none;
+		margin: 5px 10px;
+		padding: 2px 10px;
+		border-left: 2px solid #ccc;
+	}
+	
+	#tpl-content-navigation-inner div {
+		padding: 10px;
+		float: left;
+		clear: left;
+		width: 300px;
+	}
+
+}
+
+/**
+ * Main content
+ */
+#tpl-main-content {
+	margin-left: 320px;
+	padding: 10px;
+	
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+	
+}
+
+/**
+ * Footer
+ */
+#tpl-footer {
+	background-color: #ccc;
+	border-top: 10px solid #888;
+	clear: both;
+	
+	a {
+		color: black;
+	}
+
+	#tpl-document-information {
+		float: right;
+		margin: 10px;
+		
+		dl {
+			margin: 0;
+		}
+		
+		dt {
+			display: inline;
+		}
+		
+		dd {
+			display: inline;
+			margin-left: 5px;
+		}
+		
+	}
+
+	#tpl-accountibility {
+		float: left;
+		margin: 10px;
+	}
+
+	#tpl-site-links {
+		display: none;
+	}
+
+	#tpl-canada-footer-links {
+		clear: both;
+	}
+
+	#tpl-canada-footer-links-inner {
+		display: none;
+	}
+	
+}
+
+

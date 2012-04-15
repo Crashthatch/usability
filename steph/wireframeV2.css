@@ -1,0 +1,307 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+#tpl-header h2, /*#tpl-header h3,*/
+#tpl-canada-header-links h3, #tpl-main-navigation h3, #tpl-breadcrumb h3, #tpl-header hr, #tpl-footer h2, #tpl-footer h3, hr {
+	position: absolute;
+	left: -1000px;
+}
+#tpl-header h4, #tpl-footer h4 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+#tpl-header a, #tpl-content-navigation a, #tpl-footer a {
+	color: black;
+	text-decoration: none;
+}
+#tpl-header a:focus, #tpl-footer a:focus, #tpl-content-navigation a:focus, #tpl-content-navigation a:hover, #tpl-header a:hover, #tpl-footer a:hover {
+	text-decoration: underline;
+}
+#tpl-header ul, #tpl-footer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/**
+ * The skip ahead section should not be seen by browsers, only when it
+ * is activated by the keyboard should it be shown.
+ */
+#tpl-skip-ahead div {
+	margin: 0;
+	padding: 0;
+}
+#tpl-skip-ahead ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#tpl-skip-ahead-links a {
+	position: absolute;
+	left: -1000px;
+	background-color: white;
+	text-align: center;
+	width: 200px;
+	z-index: 1;
+	padding: 10px;
+}
+#tpl-skip-ahead-links a:focus {
+	left: 400px;
+}
+#tpl-skip-ahead-links a {
+	text-decoration: none;
+}
+#tpl-skip-ahead-links a:active, #tpl-skip-ahead-links a:hover {
+	text-decoration: underline;
+}
+/**
+ * Header
+ */
+#tpl-header {
+	background-color:#2F2727;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#135), to(#1a82f7));
+  background: -webkit-linear-gradient(top, #135, #1a82f7);
+  background: -moz-linear-gradient(top, #135, #1a82f7);
+  background: -ms-linear-gradient(top, #135, #1a82f7);
+  background: -o-linear-gradient(top, #135, #1a82f7);
+	padding:1px 0 0 0;
+}
+#tpl-canada-identity h3 {
+	padding:20px 10px 10px 10px;
+}
+#tpl-canada-identity h3 a {
+	color:#fff;
+	text-shadow: 2px 2px 2px #333333;
+	font-size:1.3em;
+}
+#tpl-canada-identity ul {
+}
+#tpl-canada-signature {
+	position:absolute;
+	top:0;
+	left:0;
+	/*float: left;
+	margin: 10px;*/
+	
+	/* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	/* IE 5-7 */
+  filter: alpha(opacity=50);
+	/* Netscape */
+  -moz-opacity: 0.5;
+	/* Safari 1.x */
+  -khtml-opacity: 0.5;
+	/* Good browsers */
+  opacity: 0.5;
+}
+#tpl-canada-wmms {
+	position:absolute;
+	bottom:0px;
+	right:0;/*float: right;
+	margin: 5px;*/
+}
+#tpl-canada-header-links {
+	position:absolute;
+	top:0;
+	right:0;
+	width:100%;
+}
+#tpl-canada-header-links a {
+	/*display: none;*/
+	float:right;
+	margin-top:10px;
+	padding:0px 10px;
+	color:#fff;
+	border-right:1px solid #CCC;
+}
+#tpl-header-language-switch a {
+/*position: absolute;
+	display: block;
+	right: 10px;
+	top: 70px;
+	z-index: 2;
+	padding: 3px 10px;
+	border: 1px solid blue;
+	background-color: #ccf;*/
+}
+#tpl-header-language-switch a:hover {
+/*background-color: #eef;*/
+}
+#tpl-search {
+	display: none;
+}
+#tpl-main-navigation {
+	float: left;
+	width: 100%;
+	background-color: #eee;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ddd));
+	background: -webkit-linear-gradient(top, #eee, #ddd);
+	background: -moz-linear-gradient(top, #eee, #ddd);
+	background: -ms-linear-gradient(top, #eee, #ddd);
+	background: -o-linear-gradient(top, #eee, #ddd);
+	-webkit-box-shadow:0px 0px 3px 0px #333333;
+	-moz-box-shadow:0px 0px 3px 0px #333333;
+	-o-box-shadow:0px 0px 3px 0px #333333;
+	-ms-box-shadow:0px 0px 3px 0px #333333;
+	box-shadow:0px 0px 3px 0px #333333;
+}
+#tpl-main-navigation-inner {
+/*position: relative;
+	padding-top: 60px;
+	padding-left: 5px;
+	background-color: #eee;*/
+}
+#tpl-main-navigation-inner a {
+	float: left;
+	border: 1px solid #aaa;
+	padding: 9px 15px 7px 15px;
+	margin:5px 2px;
+	font-size: 0.8em;
+	background-color:#ccc;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#eee), to(#ccc));
+	background: -webkit-linear-gradient(top, #eee, #ccc);
+	background: -moz-linear-gradient(top, #eee, #ccc);
+	background: -ms-linear-gradient(top, #eee, #ccc);
+	background: -o-linear-gradient(top, #eee, #ccc);
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+	-ms-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow: inset 0px 0px 5px 0px #fff;
+	-moz-box-shadow: inset 0px 0px 5px 0px #fff;
+	-o-box-shadow: inset 0px 0px 5px 0px #fff;
+	-ms-box-shadow: inset 0px 0px 5px 0px #fff;
+	box-shadow: inset 0px 0px 5px 0px #fff;
+}
+#tpl-main-navigation-inner a:hover {
+	text-decoration:none;
+	background-color:#135;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ddd), to(#ccc));
+	background: -webkit-linear-gradient(top, #ddd, #ccc);
+	background: -moz-linear-gradient(top, #ddd, #ccc);
+	background: -ms-linear-gradient(top, #ddd, #ccc);
+	background: -o-linear-gradient(top, #ddd, #ccc);/**/
+	-webkit-box-shadow:  0px 0px 5px 0px #aaa;
+	-moz-box-shadow:  0px 0px 5px 0px #aaa;
+	-o-box-shadow:  0px 0px 5px 0px #aaa;
+	-ms-box-shadow:  0px 0px 5px 0px #aaa;
+	box-shadow:  0px 0px 5px 0px #aaa;
+}
+#tpl-main-navigation ul {
+	display: none;
+}
+#tpl-breadcrumb {
+	clear: both;
+	height: 24px;
+	/*top: 30px;
+	left: 0px;
+	right: 100px;*/
+	background-color: #fff;
+	border-bottom:#eee;
+}
+#tpl-breadcrumb ol {
+	list-style: none;
+	margin: 0;
+	margin-left: 5px;
+	padding: 0;
+	padding-top: 3px;
+}
+#tpl-breadcrumb li {
+	float: left;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+	padding: 0 0 0 5px;
+}
+#tpl-breadcrumb li a span:after {
+	content: ' > ';
+}
+#tpl-breadcrumb a {
+	color: #295376;
+}
+#tpl-breadcrumb span {
+	text-decoration: none;
+	font-size: 85%;
+	text-decoration: none;
+}
+#tpl-breadcrumb li:first-child {
+	background-image: none;
+}
+#tpl-content-navigation h2 {
+	display: none;
+}
+#tpl-content-navigation-inner div {
+	padding: 10px;
+	float: left;
+	clear: left;
+	width: 300px;
+}
+#tpl-content-navigation h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.0em;
+	padding: 2px 8px;
+	background-color: #ccc;
+}
+#tpl-content-navigation ul {
+	list-style: none;
+	margin: 5px 10px;
+	padding: 2px 10px;
+	border-left: 2px solid #ccc;
+}
+#tpl-content-navigation {
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/background-withglow-andleaf.jpg);
+	background-repeat: repeat-x;
+	background-position: center -180px;
+}
+/**
+ * Main content
+ */
+#tpl-main-content {
+	margin-left: 320px;
+	padding: 10px;
+}
+#tpl-main-content h1 {
+	margin: 0;
+	padding: 0;
+}
+/**
+ * Footer
+ */
+#tpl-footer {
+	background-color: #ccc;
+	border-top: 10px solid #888;
+	clear: both;
+}
+#tpl-footer a {
+	color: black;
+}
+#tpl-document-information {
+	float: right;
+	margin: 10px;
+}
+#tpl-document-information dl {
+	margin: 0;
+}
+#tpl-document-information dt {
+	display: inline;
+}
+#tpl-document-information dd {
+	display: inline;
+	margin-left: 5px;
+}
+#tpl-accountibility {
+	float: left;
+	margin: 10px;
+}
+#tpl-site-links {
+	display: none;
+}
+#tpl-canada-footer-links {
+	clear: both;
+}
+#tpl-canada-footer-links-inner {
+	display: none;
+}

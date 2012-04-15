@@ -1,0 +1,563 @@
+
+/**
+ * Standard body information
+ */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 80%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/background-withglow-andleaf.jpg);
+	background-repeat: repeat-x;
+	background-position: center 40px;
+}
+
+#tpl-header h2,
+#tpl-header h3,
+#tpl-header hr,
+#tpl-footer h2,
+#tpl-footer h3,
+hr {
+	position: absolute;
+	left: -1000px;
+}
+
+#tpl-header h4,
+#tpl-footer h4 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#tpl-header a,
+#tpl-content-navigation a,
+#tpl-footer a {
+	color: black;
+	text-decoration: none;
+}
+
+#tpl-header a:active,
+#tpl-footer a:active,
+#tpl-content-navigation a:active,
+#tpl-content-navigation a:hover,
+#tpl-header a:hover,
+#tpl-footer a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * The skip ahead section should not be seen by browsers, only when it
+ * is activated by the keyboard should it be shown.
+ */
+#tpl-skip-ahead div {
+	margin: 0;
+	padding: 0;
+}
+
+#tpl-skip-ahead ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tpl-skip-ahead-links a {
+	position: absolute;
+	left: -1000px;
+	background-color: white;
+	text-align: center;
+	width: 200px;
+	z-index: 1;
+	padding: 10px;
+}
+
+#tpl-skip-ahead-links a:focus {
+	left: 400px;
+}
+
+#tpl-skip-ahead-links a {
+	text-decoration: none;
+}
+
+#tpl-skip-ahead-links a:active,
+#tpl-skip-ahead-links a:hover {
+	text-decoration: underline;
+}
+
+/**
+ * The template header contains the governement information, identifying logos,
+ * main navigation and breadcrumb.  All content is below the header.
+ */
+#tpl-extra-div-1 {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	z-index: -1;
+}
+
+#tpl-header-inner {
+	position: relative;
+	height: 219px;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#tpl-canada-header-links {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 41px;
+	background-color: black;
+	color: white;
+}
+
+#tpl-header-links {
+	list-style: none;
+	float: right;
+	margin: 13px auto;
+	padding: 0;
+}
+
+#tpl-header-links li {
+	float: left;
+	padding: 0 13px;
+	border-right: 1px solid white;
+}
+
+#tpl-header-links a {
+	font-size: 0.9em;
+	color: white;
+	text-decoration: none;
+}
+
+#tpl-header-links a:hover {
+	text-decoration: underline;
+}
+
+#tpl-header-language-switch {
+	border-right: 0 !important;
+}
+
+#tpl-canada-images {
+	list-style: none;
+}
+
+#tpl-canada-signature {
+	position: absolute;
+	z-index: 10;
+	left: 10px;
+	top: 7px;
+	height: 24px;
+	width: 234px;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/sig-eng-bg.gif);
+}
+
+#tpl-canada-signature img {
+	display: block;
+	height: 0;
+	width: 0;
+}
+
+#tpl-canada-wmms {
+	position: absolute;
+	z-index: 100;
+	top: 80px;
+	left: 800px;
+	height: 40px;
+	width: 140px;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/wmms-bg.gif);
+}
+
+#tpl-canada-wmms img {
+	display: block;
+	height: 0;
+	width: 0;
+}
+
+#tpl-canada-identity-inner h3 {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	width: 300px;
+	height: 80px;
+}
+
+#tpl-canada-identity-inner h3 a {
+	color: white;
+	display: block;
+	font-size: 2em;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	/* Doesnt pass validator
+	text-shadow: #333 1px 1px 1px;*/
+	text-decoration: none;
+}
+
+#tpl-search {
+	position: absolute;
+	background: #146094;
+	border-top: 1px solid #87aec9;
+	text-align: right; 
+	right: 0; 
+	top: 124px;
+	padding: 12px 10px 5px 12px; 
+	width: auto;
+	border-left: 1px solid #15527D; 
+	border-right: 1px solid #15527D;
+	z-index:100;
+}
+
+#tpl-search span {
+	display: none;
+}
+
+#tpl-search-query {
+	width: 218px;
+	padding: 3px 0;
+	color: #444;
+	border: 1px solid #ccc;
+	font-size: 100%;
+	margin: 0;
+}
+
+#tpl-search-submit{
+	min-height:24px;
+	background: #eee;
+	border-bottom:1px solid #999;
+	border-right: 1px solid #999;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff; 
+	color: #333; 
+	padding: 2px 6px;
+	/* Doesnt pass validator
+	border-radius:2px;
+	text-shadow: 0 1px 0 #eee;
+	font-weight:400;
+	box-shadow:none;
+	*/
+}
+
+#tpl-search-submit:active{
+	/* Doesnt pass validator
+	box-shadow: inset 0 0 5px 2px #999, 0 0 0 0 #eee;*/
+	border: 1px solid #999;
+}
+
+#tpl-main-navigation-inner {
+	position: absolute;
+	background-color: #146094;
+	height: 28px;
+	top: 163px;
+	left: 0px;
+	right: 0px;
+	border-bottom: 4px solid #ccc;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/menu-background.gif);
+	background-repeat: repeat-x;
+}
+
+#tpl-main-navigation-inner div {
+	float: left;
+	margin: 5px 10px;
+	height: 24px;
+}
+
+#tpl-main-navigation a {
+	margin-top: -10px;
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+}
+
+#tpl-main-navigation h4 {
+	margin: 0;
+	padding: 0;
+}
+
+#tpl-main-navigation-inner div:hover {
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/menu-border.gif);
+}
+
+#tpl-main-navigation ul {
+	display: none;
+}
+
+#tpl-breadcrumb {
+	position: absolute;
+	height: 24px;
+	top: 195px;
+	left: 0px;
+	right: 0px;
+	background-color: white;
+}
+
+#tpl-breadcrumb ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 3px;
+}
+
+#tpl-breadcrumb li {
+	float: left;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/images/breadcrumb.gif);
+	background-position: 0 center ;
+	background-repeat: no-repeat;
+	padding: 0 0 0 10px;
+	margin-right: 5px;
+}
+
+#tpl-breadcrumb a {
+	color: #295376;
+}
+
+#tpl-breadcrumb span {
+	text-decoration: none;
+	font-size: 85%;
+	text-decoration: none;
+}
+
+#tpl-breadcrumb li:first-child {
+	background-image: none;
+}
+
+#tpl-content-navigation h2 {
+	position: relative;
+	display: none;
+}
+
+#tpl-content-navigation-inner {
+	width: 940px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+#tpl-content-navigation-inner div {
+	float: left;
+	clear: left;
+	width: 300px;
+}
+
+#tpl-content-navigation h3 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.0em;
+	padding: 2px 8px;
+	background-color: #ccc;
+}
+
+#tpl-content-navigation ul {
+	list-style: none;
+	margin: 5px 10px;
+	padding: 2px 10px;
+	border-left: 2px solid #ccc;
+}
+
+#tpl-content-navigation {
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/background-withglow-andleaf.jpg);
+	background-repeat: repeat-x;
+	background-position: center -180px;
+}
+
+#tpl-main-content {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	width: 960px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 0px;
+}
+
+#tpl-main-content-inner {
+	display: block;
+	width: 600px;
+	padding: 10px;
+	padding-top: 0px;
+	margin-left: 320px;
+}
+
+#tpl-main-content h1 {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid black;
+}
+
+#tpl-footer {
+	clear: both;
+	background-color: #eee;
+}
+
+#tpl-footer > div {
+	position: relative;
+}
+
+#tpl-document-information {
+	background-color: white;
+}
+
+#tpl-document-information > div {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#tpl-document-information dl {	
+	text-align: right;
+	margin-right: 10px;
+}
+
+#tpl-document-information dt {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}	
+
+#tpl-document-information dd {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}	
+
+#tpl-accountibility {
+	background-color: #eee;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/footer-deco.gif);
+	background-repeat: repeat-x;
+	background-position: center 0;
+	height: 80px;
+	clear: both;
+}
+
+#tpl-accountibility h2 {
+	display: block !important;
+	height: 60px;
+	margin: 0;
+	padding: 0;
+}
+
+#tpl-accountibility h2 span {
+	display: none;
+}
+
+#tpl-accountibility div {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#tpl-accountibility ul {
+	position: absolute;
+	list-style: none;
+	margin: 0 0 0 5px;
+	padding: 0;
+	top: 75px;
+}
+
+#tpl-accountibility a {
+	color: black;
+	text-decoration: none;
+}
+
+#tpl-accountibility li {
+	float: left;
+}
+
+#tpl-transparency {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #999;
+}
+
+#tpl-site-links {
+	clear: both;
+}
+
+#tpl-site-links a {
+	color: black;
+	text-decoration: none;
+	font-size: 80%;
+}
+
+#tpl-site-links div {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#tpl-site-links-inner div {
+	float: left;
+	width: 220px;
+	padding: 10px;
+}
+
+#tpl-site-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tpl-site-links h4 a {
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#tpl-site-links li a {
+	font-size: 0.9em;
+}
+
+#tpl-site-links li {
+	margin-top: 7px;
+}
+
+#tpl-canada-footer-links {
+	background-color: black;
+	clear: both;
+}
+
+#tpl-canada-footer-links div {
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+	background-color: black;
+	height: 30px;
+	padding: 10px;
+}
+
+#tpl-canada-footer-links ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#tpl-canada-footer-links li {
+	float: left;
+	width: 150px;
+}
+
+#tpl-canada-footer-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 90%;
+	position: relative;
+}
+
+#tpl-canada-footer-links span {
+	display: block;
+	text-transform: uppercase;
+}
+
+#tpl-canada-footer-links a:after {
+	content: attr(title);
+}
+
+#extraDiv1 {
+	clear: both;
+}

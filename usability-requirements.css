@@ -1,0 +1,201 @@
+/*
+http://www.tbs-sct.gc.ca/fip-pcim/ts-st-eng.asp
+Date Modified: 2011-11-02
+
+h1. Content pages
+
+Each Web page contains the following common visual elements and structured into three main areas: header, body and footer.
+
+Note: Image files specified in this section are distributed through the GC Web Usability theme of the Web Experience Toolkit.
+
+h2. Header
+
+See Appendix E of the Standard on Web Usability, sections 2.2 to 2.2.5.4
+
+For the purposes of the Federal Identity Program (FIP), the header includes the background image, the Government of Canada navigation bar, the FIP signature, the site title, the Canada Wordmark, search and the navigation bar.
+
+h3. Background image
+
+* The background image (background-withglow-andleaf.jpg) over a white (#fff) background is to be applied to Government of Canada Web pages.
+* The background image is centred-aligned, 40 pixels below the top of the Web page by default.
+* The background image repeats horizontally.
+
+h3. Government of Canada navigation bar
+
+The Government of Canada navigation bar is located at the top of the header.
+
+Dimensions:
+
+* Height when using the Government of Canada signature: 41 pixels by default
+* Height when using the Arms of Canada signature: To be determined
+
+Presentation:
+
+* 13 pixels below the top boundary of the Government of Canada navigation bar
+* Background (outer width): black (#000) for the colour
+* Canada.gc.ca, Services, Departments (Ministères), and official language selection link are displayed from left to right, 10 pixels to the left of the inner right boundary of the Government of Canada navigation bar
+* Each link is separated by a white (#fff) vertical bar with 13 pixels of space on each side of the vertical bar by default
+* Font: 9 point Verdana by default
+* Foreground: white (#fff)
+
+Link properties:
+
+* Canada.gc.ca links to http://www.canada.gc.ca/home.html or http://www.canada.gc.ca/accueil.html
+* Services links to http://www.servicecanada.gc.ca/eng/home.shtml or http://www.servicecanada.gc.ca/fra/accueil.shtml
+* Departments (Ministères) links to http://www.canada.gc.ca/depts/major/depind-eng.html or http://www.canada.gc.ca/depts/major/depind-fra.html
+* Official languages selection links to the relevant content in the other language
+
+h3. Federal Identity Program signature
+
+The Government of Canada signature (sig-eng-bg.gif or sig-fra-bg.gif) is to be applied to all government Web pages.
+
+Location:
+
+* 10 pixels to the right of the inner left boundary of the Government of Canada navigation bar
+* 10 pixels below the top of the Government of Canada navigation bar
+
+Dimensions:
+
+* Width: 234 pixels
+* Height: 22 pixels
+
+h3. Site title
+
+Location:
+
+* 10 pixels to the right of the inner left boundary of the banner
+* Centred vertically in the banner
+
+Dimensions:
+
+* Available width: 360 pixels
+* Available height: 123 pixels
+
+Presentation:
+
+* Font: 22.5 point Arial by default
+* Text shadow:
+  * Colour: dark grey (#333)
+  * Position (right, down): 1 pixel, 1 pixel
+  * Blur radius: 1pixel
+* Foreground: white (#fff) by default
+* Background: transparent
+
+h3. Canada Wordmark
+
+The Canada Wordmark (wmms-bg.gif) is to be applied to all Government of Canada Web pages.
+
+Location:
+
+* 10 pixels to the left of the inner right boundary of the banner
+* 39 pixels below the top of the banner
+
+Dimensions:
+
+* Width: 139 pixels
+* Height: 33 pixels
+
+h3. Search
+
+Location:
+
+* Search (Recherche) button is 10 pixels to the left of the inner right boundary of the banner
+* Search text input field is 5 pixels to the left of the Search (Recherche) button
+* Search (Recherche) button and search text input field are 5 pixels above the bottom of the banner
+
+Presentation:
+
+* Button foreground: Dark grey (#333) by default
+* Button background (normal): search-button.gif for the image and grey (#ccc) for the colour
+* Button background (hover/focus): search-button-focus.gif for the image and grey (#ddd) for the colour
+* Button and search text input field are enclosed in a container with the following properties:
+  * Background: #146094
+  * Border-left: 1px solid #15527D
+  * Border-right: 1px solid #15527D
+  * Border-top: 1px solid #87AEC9
+  * Padding (top, right, bottom, left): 12 pixels, 10 pixels, 5 pixels, 12 pixels
+  * Font: 10 point Verdana by default
+
+h3. Site navigation bar
+
+The site navigation bar is located immediately below the banner.
+
+Presentation:
+
+* Foreground: white (#fff) by default and light blue (#CEE3F1) for mega menu column headings
+* Background (inner width): menu-background.gif for the image and #23447E for the colour
+* Background (link, normal): transparent
+* Background (link, hover/focus/active): menu-border.gif for the image and #0f315b for the colour
+* Background (submenu): #1A3D6C for the colour
+* Background (outer width): transparent
+* Background image repeats horizontally
+* Down arrow (for submenus): down-arrow.gif
+* Border-bottom: 4px solid #CCCCCC
+* Font: 9.5 point Verdana and 11 point Verdana for mega menu column headings
+
+Link properties:
+
+* Border-left: 1px solid #124B79
+* Border-right: 1px solid #15598F
+* Padding (top, right, bottom, left): 6 pixels, 10 pixels, 6 pixels, 10 pixels
+
+h2. Body
+
+See Appendix E of the Standard on Web Usability, sections 2.2.6 to 2.2.6.2
+
+The body is located immediately below the header and includes a content area and may also include secondary navigation. The preferred fonts for the body areas are Arial, Helvetica and Verdana.
+
+Background presentation:
+
+* Inner width: content-deco.gif for the image and white (#fff) for the colour
+* Outer width: transparent
+* Background image repeats vertically
+
+h2. Footer
+
+See Appendix E of the Standard on Web Usability, sections 2.2.7 to 2.2.7.2
+
+The footer is located immediately below the body and includes the site footer and the Government of Canada footer. The background area is transparent.
+
+h3. Site footer
+
+The site footer is located immediately below the body.
+
+Presentation:
+
+* Foreground: dark grey (#222) by default
+* Background (outer width): foot-bottom-deco.gif for the image and light grey (#efefef) for the colour
+* Background image (outer width) repeats horizontally
+* Background (inner width): footer-deco.gif for the image and light grey (#efefef) for the colour
+* Left-most column is 10 pixels to the right of the inner left boundary of the site footer
+* Font: 10.5 point Arial by default for the column headings and 9.5 point Arial by default for regular column text
+* Column headings are not underlined by default
+
+h3. Government of Canada footer
+
+The Government of Canada footer is located immediately below the site footer.
+
+Dimensions:
+
+* Height: 57 pixels by default
+
+Presentation:
+
+* Background: #040707 for the colour
+* HEALTH healthycanadians.gc.ca (SANTÉ canadiensensante.gc.ca), TRAVEL travel.gc.ca (VOYAGE voyage.gc.ca), SERVICE CANADA servicecanada.gc.ca, JOBS jobbank.gc.ca (EMPLOIS guichetemplois.gc.ca), and ECONOMY actionplan.gc.ca (ÉCONOMIE plandaction.gc.ca) links are displayed from left to right 10 pixels to the right of the inner left boundary of the Government of Canada footer. The domain names appear on the second line by default
+* Canada.gc.ca link is 15 pixels to the left of the inner right boundary of the Government of Canada footer
+* Canada.gc.ca link is separated from the other links by a grey vertical bar (#666) with 45 pixels of space between the Canada.gc.ca link and the vertical bar
+* Other links are separated by 45 pixels of space
+  * Font: Arial
+  * Font size ("Canada.gc.ca"):16 point by default
+  * Font size (other links): 9 point by default
+  * Colour: white (#fff)
+  * Background: transparent
+  * All links are vertically aligned in the middle of the Government of Canada footer by default
+  * HEALTH healthycanadians.gc.ca links to http://healthycanadians.gc.ca/index-eng.php, and SANTÉ canadiensensante.gc.ca links to http://canadiensensante.gc.ca/index-fra.php
+  * TRAVEL travel.gc.ca links to http://www.voyage.gc.ca/index-eng.asp and VOYAGE voyage.gc.ca links to http://www.voyage.gc.ca/index-fra.asp
+  * SERVICE CANADA servicecanada.gc.ca links to http://www.servicecanada.gc.ca/eng/home.shtml or http://www.servicecanada.gc.ca/fra/accueil.shtml
+  * JOBS jobbank.gc.ca links to http://www.jobbank.gc.ca/intro-eng.aspx, and "EMPLOIS guichetemplois.gc.ca" links to http://www.guichetemplois.gc.ca/Intro-fra.aspx
+  * ECONOMY actionplan.gc.ca links to http://actionplan.gc.ca/eng/index.asp, and ÉCONOMIE plandaction.gc.ca links to http://actionplan.gc.ca/eng/index.asp
+  * Canada.gc.ca links to http://www.canada.gc.ca/home.html or http://www.canada.gc.ca/accueil.html
+*/

@@ -1,0 +1,391 @@
+/**
+ * Hide margin and padding.  Hide list items when on lists
+ */
+.no-mp {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+/**
+ * Hide from screen but keep visibility to keyboard and screenreaders
+ */
+.visibility-hide {
+	position: absolute;
+	left: -1000px;
+}
+
+/**
+ * Hide this element completel in this view
+ */
+.display-hide {
+	display: none;
+}
+
+/**
+ * Make a background gradient
+ */
+.background-gradient (@start, @end) {
+	background: -webkit-gradient(linear,left bottom,left top,
+		color-stop(0.05, @start),
+		color-stop(0.95, @end));
+	background: -moz-linear-gradient(center bottom,
+		@start 5%,
+		@end 95%);
+}
+
+/**
+ * Add some box shadow
+ */
+.box-shadow {
+	-moz-box-shadow:1px 1px 3px #999;
+	-webkit-box-shadow:1px 1px 3px #999;
+	box-shadow:1px 1px 3px #999;
+}
+
+/**
+ * Add rounded borders to an element
+ */
+.rounded-corners (@radius: 5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+body {
+	.no-mp;
+}
+
+#tpl-header, 
+#tpl-footer {
+	h2, h3 {
+		.visibility-hide;
+	}
+	
+	h4 {
+		.no-mp;
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	
+	hr {
+		.display-hide;
+	}
+	
+}
+
+#tpl-header, 
+#tpl-content-navigation, 
+#tpl-footer {
+	a {
+		color: black;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	a:focus {
+		.no-mp;
+	}
+	
+	ul {
+		.no-mp;
+	}
+	
+}
+
+/**
+ * The skip ahead section should not be seen by browsers, only when it
+ * is activated by the keyboard should it be shown.
+ */
+#tpl-skip-ahead {
+	div {
+		.no-mp;
+	}
+	
+	#tpl-skip-ahead-links {
+		.no-mp;
+
+		a {
+			.visibility-hide;
+			background-color: white;
+			text-align: center;
+			width: 200px;
+			z-index: 1;
+			padding: 10px;
+		}
+
+		a:focus {
+			left: 400px;
+		}
+
+		a:active {
+			text-decoration: underline;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+	}
+	
+}
+
+/**
+ * Header
+ */
+#tpl-header {
+	
+	#tpl-canada-identity {
+		h3 {
+			position: absolute;
+			display: block;
+			top: 35px;
+			left: 30px;
+			z-index: 1;
+			font-size: 1.8em;
+			
+			a {
+				color: #eee;
+				text-shadow: 2px 2px 0px #333;
+			}
+		}
+		
+		ul {
+			height: 40px;
+			background-color: white;
+		}
+		
+		#tpl-canada-signature {
+			float: left;
+			margin: 10px;
+		}
+
+		#tpl-canada-wmms {
+			float: right;
+			margin: 5px;
+		}
+	
+	}
+
+	#tpl-canada-header-links a {
+		display: none;
+	}
+	
+	#tpl-header-language-switch {
+		
+		a {
+			position: absolute;
+			display: block;
+			right: 10px;
+			top: 105px;
+			z-index: 2;
+			float: left;
+			.box-shadow;
+			.rounded-corners;
+			.background-gradient(#aab, #dde);
+			padding: 4px 8px;
+			margin: 5px;
+			background-color: #ccf;
+			font-weight: normal;
+			font-size: 0.8em;
+		}
+		
+		a:hover {
+			font-weight: bold;
+			.background-gradient(#dde, #aab);
+		}
+		
+	}
+
+	#tpl-search {
+		display: none;
+	}
+
+	#tpl-main-navigation {
+		float: left;
+		width: 100%;
+		.background-gradient(#339, #77d);
+		
+		#tpl-main-navigation-inner {
+			position: relative;
+			padding-top: 60px;
+			padding-left: 5px;
+			
+			a {
+				float: left;
+				.box-shadow;
+				.rounded-corners;
+				.background-gradient(#aab, #dde);
+				padding: 4px 8px;
+				margin: 5px;
+				background-color: #ccf;
+				font-weight: normal;
+				font-size: 0.8em;
+			}
+			
+			a:hover {
+				font-weight: bold;
+				.background-gradient(#dde, #aab);
+			}
+			
+			ul {
+				display: none;
+			}
+			
+		}
+
+	}
+
+	#tpl-breadcrumb {
+		clear: both;
+		height: 24px;
+		top: 30px;
+		left: 0px;
+		right: 100px;
+		.background-gradient(#557, #224);
+		.box-shadow;
+		color: #ddd;
+		font-size: 85%;
+		
+		ol {
+			.no-mp;
+			margin-left: 5px;
+			padding-top: 3px;
+			
+			li {
+				float: left;
+				background-position: 0 center ;
+				background-repeat: no-repeat;
+				padding: 2px 2px 2px 5px;
+				
+				a {
+					color: #ddd;
+					text-decoration: none;
+				}
+				
+				a:hover {
+					.rounded-corners;
+					color: black;
+					.background-gradient(#dde, #aab);
+				}
+				
+				a span:after {
+					content: ' > ';
+				}
+				
+			}
+			
+			li:first-child {
+				background-image: none;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+#tpl-content-navigation {
+	
+	h2 {
+		display: none;
+	}
+
+	h3 {
+		margin: 0;
+		padding: 0;
+		font-size: 1.0em;
+		padding: 2px 8px;
+		.background-gradient(#557, #224);
+		.rounded-corners;
+		.box-shadow;
+		a {
+			color: #eee;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 5px 10px;
+		padding: 2px 10px;
+		border-left: 2px solid #ccc;
+	}
+	
+	#tpl-content-navigation-inner div {
+		float: left;
+		clear: left;
+		width: 300px;
+		margin: 10px;
+	}
+
+}
+
+/**
+ * Main content
+ */
+#tpl-main-content {
+	margin-left: 320px;
+	padding: 10px;
+	
+	h1 {
+		margin: 0;
+		padding: 0;
+	}
+	
+}
+
+/**
+ * Footer
+ */
+#tpl-footer {
+	.background-gradient(#eee, #ccc);
+	border-top: 4px solid #888;
+	clear: both;
+	
+	a {
+		color: black;
+	}
+
+	#tpl-document-information {
+		float: right;
+		margin: 10px;
+		
+		dl {
+			margin: 0;
+		}
+		
+		dt {
+			display: inline;
+		}
+		
+		dd {
+			display: inline;
+			margin-left: 5px;
+		}
+		
+	}
+
+	#tpl-accountibility {
+		float: left;
+		margin: 10px;
+	}
+
+	#tpl-site-links {
+		display: none;
+	}
+
+	#tpl-canada-footer-links {
+		clear: both;
+	}
+
+	#tpl-canada-footer-links-inner {
+		display: none;
+	}
+	
+}
+
+

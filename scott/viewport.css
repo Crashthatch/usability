@@ -1,0 +1,232 @@
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+hr {
+	display: none;
+}
+
+#tpl-header h2,
+#tpl-footer h2,
+#tpl-header h3,
+#tpl-footer h3 {
+	display: none;
+}
+
+#tpl-header a,
+#tpl-content-navigation a,
+#tpl-footer a {
+	color: black;
+	text-decoration: none;
+}
+
+#tpl-header a:hover,
+#tpl-content-navigation a,
+#tpl-footer a:footer {
+	color: black;
+	text-decoration: underline;
+}
+
+#tpl-header ul,
+#tpl-content-navigation ul,
+#tpl-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#tpl-skip-ahead {
+	display: none;
+}
+
+#tpl-header {
+	position: absolute;
+	overflow: auto;
+	right: 10px;
+	top: 50px;
+	bottom: 65px;
+	width: 280px;
+	border: 3px solid #f90;
+	background-color: #fec;
+}
+
+#tpl-canada-identity h3 {
+	display: block;
+	background-color: #fc6;
+	border-bottom: 3px solid #f90;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+#tpl-canada-identity h3 a {
+	text-decoration: none;
+	color: black;
+}
+
+#tpl-canada-signature {
+	display: none;
+}
+
+#tpl-canada-wmms {
+	display: none;
+}
+
+#tpl-extra-div-1 {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	width: 214px;
+	height: 20px;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/sig-eng.gif);
+}
+
+#tpl-extra-div-2 {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 126px;
+	height: 30px;
+	background-image: url(http://www.canada.gc.ca/theme-gcwu-fegc/fip-pcim/images/wmms.gif);
+}
+
+#tpl-canada-header-links {
+	display: none;
+}
+
+#tpl-search {
+	padding: 10px;
+}
+
+#tpl-search label {
+	display: none;
+}
+
+#tpl-search input {
+	float: left;
+}
+
+#tpl-main-navigation-inner div {
+	margin: 10px;
+}
+
+#tpl-main-navigation h4 {
+	clear: both;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#tpl-main-navigation ul {
+	margin-left: 10px;
+}
+
+#tpl-content-navigation {
+	position: absolute;
+	overflow: auto;
+	top: 50px;
+	bottom: 65px;
+	left: 10px;
+	border: 3px solid #f90;
+	background-color: #fec;
+	width: 280px;
+}
+
+#tpl-content-navigation h2 {
+	display: block;
+	background-color: #fc6;
+	font-size: 1.2em;
+	border-bottom: 3px solid #f90;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+#tpl-content-navigation h3 {
+	font-size: 1.0em;
+	margin: 5px 10px;
+}
+
+#tpl-content-navigation ul {
+	margin: 3px 20px;
+	
+}
+
+#tpl-main-content {
+	position: absolute;
+	left: 305px;
+	right: 305px;
+	top: 50px;
+	bottom: 65px;
+	overflow: auto;
+	border: 3px solid orange;
+}
+
+#tpl-main-content p,
+#tpl-main-content h2 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#tpl-main-content h1 {
+	display: block;
+	background-color: #fc6;
+	font-size: 1.2em;
+	border-bottom: 3px solid #f90;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+/**
+ * Footer
+ */
+#tpl-footer {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 40px;
+	border: 3px solid #f90;
+	background-color: #fec;
+}
+
+#tpl-footer a {
+	color: black;
+}
+
+#tpl-document-information {
+	float: right;
+	margin: 10px;
+}
+
+#tpl-document-information dl {
+	margin: 0;
+}
+
+#tpl-document-information dt {
+	display: inline;
+}
+
+#tpl-document-information dd {
+	display: inline;
+	margin-left: 5px;
+}
+
+#tpl-accountibility li {
+	float: left;
+	margin: 10px;
+}
+
+#tpl-site-links {
+	display: none;
+}
+
+#tpl-canada-footer-links {
+	clear: both;
+}
+
+#tpl-canada-footer-links-inner {
+	display: none;
+}
